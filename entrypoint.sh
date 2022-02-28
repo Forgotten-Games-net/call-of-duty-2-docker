@@ -7,14 +7,14 @@ if [ ! -d "/gameserver/main/" ]; then
     wait 3
     cd /gameserver
     if wget -nv --show-progress --progress=bar:force:noscroll "https://dl.forgotten-games.net/cod/cod2_lnxded.tar.gz" ; then
-                 echo "---| Successfully downloaded, now extracting |---"
+         echo "---| Successfully downloaded, now extracting |---"
          wait 2
          tar xzvf cod2_lnxded.tar.gz -C /gameserver/
          rm cod2_lnxded.tar.gz
          echo "---| Download finished |---"
          wait 3
             else
-                 echo "---| Can't download 'cod2_lnxded.tar.gz', putting server into sleep mode... |---"
+             echo "---| Can't download 'cod2_lnxded.tar.gz', putting server into sleep mode... |---"
          sleep infinity
         fi
 fi
