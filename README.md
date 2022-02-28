@@ -22,7 +22,7 @@ For a fast start simply
       -p 28960:28960/udp \
       -v <your/path/to/game/>:/gameserver \
       -v <your/path/to/game/>:/config \
-      -e COD_VERSION="1_5b" \
+      -e COD_VERSION="1_3" \
       -e COD_GAME="main" \
       -e STARTUP="+set fs_homepath config/ +set dedicated 2 +exec dedicated.cfg" \
     keinnerd/cod2docker:latest
