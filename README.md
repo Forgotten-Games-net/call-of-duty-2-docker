@@ -2,6 +2,7 @@
 
 Here you get a Docker Image for the Game Call of Duty 2. You can host easily multiple gameserver instances with one gamedir! 
 
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/keinnerd/cod2docker?style=flat-square) ![Docker Pulls](https://img.shields.io/docker/pulls/keinnerd/cod2docker?style=flat-square)
 
 ## 📦 What you get
  - Well documented Game Configurations
