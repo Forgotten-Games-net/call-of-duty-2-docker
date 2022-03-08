@@ -17,14 +17,13 @@ For a fast start simply
 
      docker create \
       --name cod2docker \
-      -p 20500-20510:20500-20510/udp \
       -p 28960:28960 \
       -p 28960:28960/udp \
       -v <your/path/to/game/>:/gameserver \
       -v <your/path/to/game/>:/config \
       -e COD_VERSION="1_3" \
       -e COD_GAME="main" \
-      -e STARTUP="+set fs_homepath config/ +set dedicated 2 +exec dedicated.cfg" \
+      -e STARTUP="+set fs_homepath config/default +set dedicated 2 +exec dedicated.cfg" \
     keinnerd/cod2docker:latest
 
 ## 🔧 Envs
@@ -38,7 +37,7 @@ For a fast start simply
 
 ## 📁 Multiple Servers
 
-If you want to host multiple servers, create a new container then create inside your config folder different dirs and change `+set fs_homepath config/` to `config/server1` the next to `config/server1`. Create Configs inside the dirs and spin up the container. 
+If you want to host multiple servers, create a new container then create inside your config folder different dirs and change `+set fs_homepath config/default` to `config/server1` the next to `config/server2`. Create Configs inside the dirs and spin up the container. 
 
 ```
 ── /config
@@ -55,7 +54,7 @@ If you want to host multiple servers, create a new container then create inside 
 
 To enable comment the Punkbuster vars in your dedicated.cfg out!
 
-Open needed Ports in your firewall! Default Ports: 20500/udp 20510/udp 28960/tcp 28960/udp
+Open needed Ports in your firewall! Default Ports: 28960/tcp 28960/udp
 
 ## 👾 Mods
 
