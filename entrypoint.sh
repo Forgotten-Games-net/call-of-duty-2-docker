@@ -40,6 +40,5 @@ if [ "${COD_GAME}" == "mod" ]; then
      echo "---| Change the Startup ENV to your mods's needings."
      echo "---| Server will start in 3 Seconds."
      cd /gameserver/
-     LD_PRELOAD="libs/libcod2_${LIBCOD}.so" ./${STARTUP}
-
+     LD_PRELOAD="libs/libcod2_${LIBCOD}.so" ./cod2_lnxded_${COD_VERSION} +set fs_basepath /gameserver ${STARTUP}
 fi

@@ -7,6 +7,7 @@ Here you get a Docker Image for the Game Call of Duty 2. You can host easily mul
 ## 📦 What you get
  - Well documented Game Configurations
  - Multiple Versions (`1.0a`, `1.2c`, `1.3`)
+ - Multiple Servers with one install
  - Download latest Serverfiles
  - LibCOD from [Freekers Mirror](https://github.com/Freekers/libcod-mirror) included 
  - Also "cracked" binaries so any user can join!
@@ -62,7 +63,7 @@ If you want to play a Modification you need to upload your mod in the `gamedir` 
 
 - Change `COD_GAME` to `mod`
 - Change `LIBCOD` must match the Binary version
-- Change `STARTUP` to `cod2_lnxded_VERSION +set fs_basepath /gameserver +set fs_game YOURMOD +set fs_homepath config/YOURMOD/ +set dedicated 2 +exec YOURMODCONFIG.cfg` 
+- Change `STARTUP` to `+set fs_game YOURMOD +set fs_homepath config/YOURMOD/ +set dedicated 2 +exec YOURMODCONFIG.cfg` 
 
 
 ## 📝 ToDo
